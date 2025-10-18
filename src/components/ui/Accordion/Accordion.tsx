@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import styles from './Accordion.module.scss';
+import { useState } from "react";
+import styles from "./Accordion.module.scss";
 
 type AccordionProps = {
   question: string;
@@ -17,7 +17,7 @@ export const Accordion = ({ question, answer }: AccordionProps) => {
         aria-expanded={open}
       >
         <span>{question}</span>
-        <span className={styles.icon}>{open ? '−' : '+'}</span>
+        <span className={styles.icon}>{open ? "−" : "+"}</span>
       </button>
 
       {open && (

@@ -1,5 +1,5 @@
-import styles from './Input.module.scss';
-import React from 'react';
+import styles from "./Input.module.scss";
+import React from "react";
 
 type InputProps = {
   label: string;
@@ -12,10 +12,10 @@ type InputProps = {
 
 export const Input = ({
   label,
-  placeholder = '',
+  placeholder = "",
   value,
   onChange,
-  type = 'text',
+  type = "text",
   name,
 }: InputProps) => {
   // Controlled mı, uncontrolled mı belirle
@@ -34,7 +34,7 @@ export const Input = ({
           className={styles.input}
           type={type}
           placeholder={placeholder}
-          value={value ?? ''}
+          value={value ?? ""}
           onChange={onChange}
         />
       ) : (
@@ -45,7 +45,7 @@ export const Input = ({
           className={styles.input}
           type={type}
           placeholder={placeholder}
-          defaultValue={value ?? ''}
+          defaultValue={value ?? ""}
         />
       )}
     </div>

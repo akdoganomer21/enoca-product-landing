@@ -1,4 +1,4 @@
-import styles from './Modal.module.scss';
+import styles from "./Modal.module.scss";
 
 type ModalProps = {
   isOpen: boolean;

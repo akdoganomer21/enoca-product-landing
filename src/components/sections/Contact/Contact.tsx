@@ -1,14 +1,16 @@
-import { useState } from 'react';
-import styles from './Contact.module.scss';
-import { Button } from '../../ui/Button/Button';
-import { Input } from '../../ui/Input/Input';
+import { useState } from "react";
+import styles from "./Contact.module.scss";
+import { Button } from "../../ui/Button/Button";
+import { Input } from "../../ui/Input/Input";
 
 export const Contact = () => {
-  const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [error, setError] = useState('');
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
@@ -18,27 +20,28 @@ export const Contact = () => {
 
     // Basit doğrulama
     if (!form.name || !form.email || !form.message) {
-      setError('All fields are required.');
+      setError("All fields are required.");
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(form.email)) {
-      setError('Please enter a valid email address.');
+      setError("Please enter a valid email address.");
       return;
     }
 
-    setError('');
+    setError("");
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000); // Yalancı submit
-    setForm({ name: '', email: '', message: '' });
+    setForm({ name: "", email: "", message: "" });
   };
 
   return (
     <section className={styles.contact} id="contact">
       <h2 className={styles.heading}>Get in Touch 📬</h2>
       <p className={styles.subtitle}>
-        Have questions or feedback? Fill out the form below and we’ll get back to you.
+        Have questions or feedback? Fill out the form below and we’ll get back
+        to you.
       </p>
 
       <form className={styles.form} onSubmit={handleSubmit}>
@@ -68,7 +71,9 @@ export const Contact = () => {
         </div>
 
         {error && <p className={styles.error}>{error}</p>}
-        {submitted && <p className={styles.success}>✅ Message sent successfully (mock)!</p>}
+        {submitted && (
+          <p className={styles.success}>✅ Message sent successfully (mock)!</p>
+        )}
 
         <Button type="submit" label="Send Message" variant="primary" />
       </form>
