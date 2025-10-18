@@ -82,7 +82,7 @@ Tüm ekran görüntüleri `public/images/` klasöründe saklanmıştır.
 
 | 🏠 Hero | ⚙️ Features | 💰 Pricing | 📬 Contact |PageSpeed Insights |
 |:--:|:--:|:--:|:--:|:--:| 
-| ![Hero Section](./public/images/hero.png) | ![Features Section](./public/images/features.png) | ![Pricing Section](./public/images/pricing.png) | ![Contact Section](./public/images/contact.png) | ![PageSpeed Insights Section](./public/images/PageSpeed Insights.png) |
+| ![Hero Section](./public/images/hero.png) | ![Features Section](./public/images/features.png) | ![Pricing Section](./public/images/pricing.png) | ![Contact Section](./public/images/contact.png) | ![PageSpeed Insights Section](./public/images/PageSpeedInsights.png) |
 
 > Görseller demo sırasında alınmıştır.  
 > Her biri Light/Dark tema desteğini ve responsive tasarımı göstermektedir.
