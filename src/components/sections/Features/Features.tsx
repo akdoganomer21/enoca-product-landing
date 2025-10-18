@@ -11,7 +11,7 @@ const FEATURES = [
     title: 'Energy Optimization',
     description: 'Save up to 30% by optimizing energy consumption intelligently.',
   },
-  {
+  { 
     title: 'Seamless Integration',
     description: 'Connect with your existing devices and systems effortlessly.',
   },
