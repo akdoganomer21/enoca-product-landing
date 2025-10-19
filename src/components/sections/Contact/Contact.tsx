@@ -18,7 +18,6 @@ export const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Basit doğrulama
     if (!form.name || !form.email || !form.message) {
       setError("All fields are required.");
       return;

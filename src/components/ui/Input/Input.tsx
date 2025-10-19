@@ -18,7 +18,7 @@ export const Input = ({
   type = "text",
   name,
 }: InputProps) => {
-  // Controlled mı, uncontrolled mı belirle
+  // Controlled mı, uncontrolled mı ????
   const isControlled = onChange !== undefined;
 
   return (
