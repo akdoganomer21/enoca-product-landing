@@ -1,5 +1,6 @@
 import styles from "./Hero.module.scss";
 import { Button } from "../../ui/Button/Button";
+import photo from "../../assets/photo.jpg"; // ✅ Görsel doğru şekilde import edildi
 
 export const Hero = () => {
   return (
@@ -8,9 +9,9 @@ export const Hero = () => {
         <h1 className={styles.title}>
           Powering Your <span>Next Energy</span> Innovation ⚡
         </h1>
+
         <p className={styles.subtitle}>
-          Manage, monitor and optimize your energy systems — clean, simple, and
-          smart.
+          Manage, monitor and optimize your energy systems — clean, simple, and smart.
         </p>
 
         <div className={styles.actions}>
@@ -21,9 +22,10 @@ export const Hero = () => {
 
       <div className={styles.imageContainer}>
         <img
-          src="/src/assets/photo.jpg"
+          src={photo}
           alt="Energy innovation illustration"
           className={styles.image}
+          loading="lazy"
         />
       </div>
     </section>
