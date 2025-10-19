@@ -1,6 +1,6 @@
 import styles from "./Hero.module.scss";
 import { Button } from "../../ui/Button/Button";
-import photo from "../../assets/photo.jpg"; // ✅ Görsel doğru şekilde import edildi
+import photo from "../../../assets/photo.jpg";
 
 export const Hero = () => {
   return (
